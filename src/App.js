@@ -1,7 +1,7 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
+  //Route,
   Outlet
 } from 'react-router-dom'
 import Register from './pages/Register'
@@ -11,6 +11,7 @@ import Single from './pages/Single'
 import Write from './pages/Write'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import "./style.scss"
 
 const Layout=()=>{
   return(
@@ -63,9 +64,8 @@ function App() {
   return (
     <div className='app'>
       <div className='container'>
-        
+        <RouterProvider router={router}/>
       </div>
-      <RouterProvider router={router}/>
     </div>
   );
 }
