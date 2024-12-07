@@ -33,6 +33,15 @@ const Navbar = () => {
           <Link className="link" to="/?cat=food">
             <h6>FOOD</h6>
           </Link>
+          <Link className="link" to="">
+            <h4>John</h4>
+          </Link>
+          <Link className="link" to="">
+            <h4>Logout</h4>
+          </Link>
+          <Link className="link" to="/write">
+            <h4>Write</h4>
+          </Link>
           {/* <span>{currentUser?.username}</span>
           {currentUser ? (
             <span onClick={logout}>Logout</span>
